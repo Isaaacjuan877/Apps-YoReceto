@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+  <title>Doc YoReceto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="Img/logo.ico">
+  
+</head>
+<body>
+  <header >
+    <div class="container">
+      <img src="Img/logo.png" alt="YoReceto Logo">
+      <h1 >YoReceto</h1>
+    </div>
+   
+        
+   
+     
+  </header>
+  <section class="download">
+    <div class="logApart">
+      <img class="tcyr" src="Img/yr.png" alt="">
+      
+    </div>
+    <div class="logDesc">
+      <img src="Img/logo.png" alt="">
+      <h2  class="title">YoReceto</h2>
+      <a href="Apk/YoReceto-v1.1.apk" download><img class="android" src="Img/Android.png" alt=""></a>
+    </div>
+    
+  </section>
+  
+  <section class="description">
+    <div class="container">
+      <h2>¿Qué es YoReceto?</h2>
+    </div>
+    <div class="desc-container">
+      <div class="desc">
+        
+        <p>"YoReceto" es un proyecto o una aplicación móvil nativa que tiene como objetivo brindar una solución práctica y eficiente para aquellos que desean llevar un estilo de vida saludable. La aplicación se centra en ofrecer una amplia variedad de recetas saludables, deliciosas y personalizadas, adaptadas a las necesidades y preferencias individuales de los usuarios.
+
+          La idea detrás de "YoReceto" es proporcionar una plataforma intuitiva y accesible donde los usuarios puedan encontrar fácilmente recetas equilibradas, nutritivas y adecuadas para sus objetivos de alimentación. La aplicación puede ofrecer información detallada sobre nutrientes, como calorías, vitaminas y minerales, para que los usuarios puedan tomar decisiones informadas sobre su alimentación.
+          
+          Además de facilitar la búsqueda de recetas saludables, "YoReceto" también puede ofrecer funcionalidades adicionales, como lo es filtro por ingredientes con lo sque se cuenten a la mano.
+          
+          En resumen, "YoReceto" es una aplicación móvil diseñada para simplificar la búsqueda de recetas saludables y personalizadas, promoviendo un estilo de vida consciente y equilibrado a través de opciones culinarias variadas y nutritivas.</p>
+      </div>
+      
+    </div>
+  </section>
+
+<h2> Otras aplicaciones</h2>
+   <div class="carrusel" id="carrusel">
+
+    <div class="apps">
+      <img class="tcyr" src="Img/logo.png" alt="">
+    </div>
+    <div class="apps">
+      <img class="tcyr" src="Img/proximo.png" alt="">
+    </div>
+    <div class="apps">
+      <img class="tcyr" src="Img/proximo.png" alt="">
+    </div>
+    <div class="apps">
+      <img class="tcyr" src="Img/proximo.png" alt="">
+    </div>
+    <div class="apps">
+      <img class="tcyr" src="Img/proximo.png" alt="">
+    </div>
+    <div class="apps">
+      <img class="tcyr" src="Img/proximo.png" alt="">
+    </div>
+    
+   </div>
+   
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 YoReceto. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Obtiene el elemento del carrusel
+    const carousel = document.getElementById('carrusel');
+  
+    // Función para realizar el desplazamiento continuo
+    function continuousScroll() {
+      carousel.scrollLeft += 1; // Ajusta el valor de desplazamiento según sea necesario
+      // Asegura que el desplazamiento se mantenga continuamente
+      if (carousel.scrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.scrollLeft = 0;
+      }
+    }
+  
+    // Inicia el desplazamiento continuo
+    setInterval(continuousScroll, 100); // Ajusta el intervalo según sea necesario
+  </script>
+</body>
+</html>

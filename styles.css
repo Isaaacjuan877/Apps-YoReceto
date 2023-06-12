@@ -1,0 +1,236 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(248, 5, 5);
+  padding: 20px;
+  color: #fff;
+  width: 95%;
+}
+
+header img {
+  width: 80px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.description,
+.download {
+  background-image: url("https://previews.123rf.com/images/zhemchuzhina/zhemchuzhina1508/zhemchuzhina150800061/43823942-patr%C3%B3n-sin-fisuras-con-sombrero-de-chef-dibujado-a-mano-fondo-de-cocina-ilustraci%C3%B3n-vectorial.jpg");
+  background-blend-mode: lighten;
+  width: 80%;
+}
+.download{
+  display: flex;
+  flex-direction: row;
+}
+.android{
+  width: 400px;
+  height: 100px;
+}
+.logAprt,.logDesc{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-image: url("https://previews.123rf.com/images/zhemchuzhina/zhemchuzhina1508/zhemchuzhina150800061/43823942-patr%C3%B3n-sin-fisuras-con-sombrero-de-chef-dibujado-a-mano-fondo-de-cocina-ilustraci%C3%B3n-vectorial.jpg");
+  
+}
+.desc-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc,
+.evid {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.desc p {
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.app {
+  width: 300px;
+  height: 700px;
+}
+
+.description,
+.download {
+  margin: 50px 0;
+}
+
+h2 {
+  color: #333;
+}
+
+.Dld-Btn {
+  background-color: rgb(255, 0, 0);
+  width: 300px;
+  height: 50px;
+  padding: auto;
+  border-radius: 20px;
+}
+.carrusel{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  width: 95%;
+}
+.apps{
+  flex: 1 0 auto;
+  margin: 0 50px;
+  /*background-color: red;*/
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.tcyr, .android{
+  width: 100%;
+ }
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  width: 95%;
+}
+.title{
+  font-size: 32px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .desc p {
+    font-size: 16px;
+  }
+
+  .app {
+    width: 200px;
+    height: auto;
+  }
+
+  .Dld-Btn {
+    width: 300px;
+    height: 50px;
+  }
+
+  .description,
+  .download {
+    width: 100%;
+  }
+
+  .desc-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .download{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc,
+  .evid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .tcyr{
+   width: 100%;
+  }
+  
+  .logAprt,.logDesc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url("https://previews.123rf.com/images/zhemchuzhina/zhemchuzhina1508/zhemchuzhina150800061/43823942-patr%C3%B3n-sin-fisuras-con-sombrero-de-chef-dibujado-a-mano-fondo-de-cocina-ilustraci%C3%B3n-vectorial.jpg");
+    
+  }
+}
+@media screen and (max-width: 480px) {
+  header img {
+    width: 40px;
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  .app {
+    width: 150px;
+    height: auto;
+  }
+
+  .Dld-Btn {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media screen and (max-width: 320px) {
+  header img {
+    width: 30px;
+  }
+
+  header h1 {
+    font-size: 14px;
+  }
+
+  .app {
+    width: 120px;
+  }
+
+  .Dld-Btn {
+    width: 250px;
+    height: 50px;
+  }
+}
